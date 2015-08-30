@@ -29,6 +29,15 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+"Set colorscheme to Solarized
+syntax enable
+set background=dark
+colorscheme solarized
+
+"Set Line Numbers and Relative Line Numbers
+set number
+set relativenumber
+
 "Remap the arrow keys to help lower dependence
 noremap <Up> <NOP>
 noremap <Down> <NOP>
