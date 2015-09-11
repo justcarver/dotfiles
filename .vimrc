@@ -10,9 +10,10 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-" The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 Plugin 'tpope/vim-fugitive'
+Plugin 'bling/vim-airline'
+Plugin 'scrooloose/syntastic'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -34,6 +35,14 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+"Set Vim-Airline to display
+set laststatus=2
+let g:airline_powerline_fonts = 1
+"if !exists('g:airline_symbols')
+"    let g:airline_symbols = {}
+"endif
+"let g:airline_symbols.space = "\ua0"
+
 "Set Line Numbers and Relative Line Numbers
 set number
 set relativenumber
@@ -49,17 +58,6 @@ nnoremap ; :
 "nnoremap : ;
 vnoremap ; :
 "vnoremap : ;
-
-" If the current buffer has never been saved, it will have no name,
-" call the file browser to save it, otherwise just save it.
-command -nargs=0 -bar Update if &modified
-	\|    if empty(bufname('%'))
-	    \|        browse confirm write
-	\|    else
-	    \|        confirm write
-	\|    endif
-    \|endif
-nnoremap <silent> <C-S> :<C-u>Update<CR>
 
 set shiftwidth=4
 set softtabstop=4
