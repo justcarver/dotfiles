@@ -11,9 +11,15 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Keep Plugin commands between vundle#begin/end.
-Plugin 'tpope/vim-fugitive'
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
+Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -29,6 +35,8 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+set shell=bash
 
 "Set colorscheme to Solarized
 syntax enable
@@ -47,18 +55,30 @@ let g:airline_powerline_fonts = 1
 set number
 set relativenumber
 
+"Set tab behavior
+set shiftwidth=2
+set softtabstop=2
+set smarttab
+
+"Set Color Column
+let &colorcolumn=join(range(81,999),",")
+
+"Set Leader to ,
+let mapleader=","
+
 "Remap the arrow keys to help lower dependence
 noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
 
+"Activate NERDTree
+noremap <Leader>n :NERDTreeToggle<Cr>
+let NERDTreeQuitOnOpen=1
+
 "Switch : and ; bindings
-nnoremap ; :
+"nnoremap ; :
 "nnoremap : ;
-vnoremap ; :
+"vnoremap ; :
 "vnoremap : ;
 
-set shiftwidth=4
-set softtabstop=4
-set smarttab
