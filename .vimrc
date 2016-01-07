@@ -19,8 +19,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -74,6 +74,7 @@ noremap <Right> <NOP>
 "Activate NERDTree
 noremap <Leader>n :NERDTreeToggle<Cr>
 let NERDTreeQuitOnOpen=1
+set shell=sh
 
 "Switch : and ; bindings
 "nnoremap ; :
