@@ -2,9 +2,13 @@
 call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
-Plug 'kien/ctrlp.vim'
+
+" Vim-Airline - status bar
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
+"End Vim-Plug
 
 "Syntax Highlighting
 syntax on
@@ -26,3 +30,8 @@ noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
+
+"Vim-Airline settings
+set laststatus=2
+let g:airline_powerline_fonts = 1
+let g:airline_theme='base16_default'
