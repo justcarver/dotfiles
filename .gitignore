@@ -39,3 +39,4 @@ Thumbs.db
 #Specific Files Ignored by Me#
 ######################
 .gitconfig
+.config/fish/fishd*
