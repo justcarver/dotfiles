@@ -51,6 +51,16 @@ noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
 
+"Remap the Vim split navigation
+nnoremap <C-j> <C-W><C-j>
+nnoremap <C-k> <C-W><C-k>
+nnoremap <C-h> <C-W><C-h>
+nnoremap <C-l> <C-W><C-l>
+
+"More natural split creation
+set splitbelow
+set splitright
+
 "Plugin Settings
 "Vim-Airline settings
 set laststatus=2
