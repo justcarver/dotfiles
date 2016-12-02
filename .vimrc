@@ -10,6 +10,9 @@ Plug 'vim-airline/vim-airline-themes'
 " Vim-Base16
 Plug 'chriskempson/base16-vim'
 
+" Vim-JSX - React Syntax Highlighting and indenting
+Plug 'mxw/vim-jsx'
+
 "End Vim-Plug
 call plug#end()
 
