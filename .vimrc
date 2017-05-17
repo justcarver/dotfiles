@@ -25,6 +25,9 @@ Plug 'tpope/vim-fugitive'
 "vim-surround
 Plug 'tpope/vim-surround'
 
+"vim-rails
+Plug 'tpope/vim-rails'
+
 "End Vim-Plug
 call plug#end()
 
@@ -76,6 +79,10 @@ nnoremap <C-l> <C-W><C-l>
 "More natural split creation
 set splitbelow
 set splitright
+
+"Vim Spell Check in Markdown and Git Commit messaged
+autocmd BufRead,BufNewFile *.md setlocal spell
+autocmd FileType gitcommit setlocal spell
 
 "Plugin Settings
 "Vim-Airline settings
