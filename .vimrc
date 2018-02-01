@@ -19,14 +19,20 @@ Plug 'pangloss/vim-javascript'
 " Vim-JSX - React Syntax Highlighting and indenting
 Plug 'mxw/vim-jsx'
 
+" Vim-Pug: Templating Engine
+Plug 'digitaltoad/vim-pug'
+
 "Fugitive.vim
 Plug 'tpope/vim-fugitive'
 
 "vim-surround
 Plug 'tpope/vim-surround'
 
+"vim-elixir"
+Plug 'elixir-lang/vim-elixir'
+
 "vim-rails
-Plug 'tpope/vim-rails'
+"Plug 'tpope/vim-rails'
 
 "End Vim-Plug
 call plug#end()
