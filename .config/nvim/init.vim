@@ -24,6 +24,14 @@ Plug 'tpope/vim-fugitive'
 "vim-surround
 Plug 'tpope/vim-surround'
 
+"Deoplete
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
 
 "End Vim-Plug block
 call plug#end()
@@ -89,3 +97,5 @@ nmap <Leader>ej :lnext<CR>
 "Go to previous error/warning
 nmap <Leader>ek :lprev<CR>
 
+"Deoplete
+let g:deoplete#enable_at_startup = 1
