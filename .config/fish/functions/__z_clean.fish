@@ -1,0 +1,1 @@
+/Users/Carver/.config/fisherman/z/functions/__z_clean.fish

@@ -1,0 +1,1 @@
+/Users/Carver/.config/fisherman/z/conf.d/z.fish

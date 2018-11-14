@@ -1,10 +1,7 @@
 source /usr/local/share/chruby/chruby.fish
 source /usr/local/share/chruby/auto.fish
 
-alias ls 'ls -lahGp'
+alias ls="ls -lahGp"
+alias vim="nvim"
 
-function brewup
-  echo 'Updating Homebrew'
-  brew update
-  brew upgrade
-end
+set PATH /development/flutter/bin $PATH
