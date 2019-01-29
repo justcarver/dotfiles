@@ -1,1 +1,0 @@
-/Users/Carver/.config/fisherman/z/functions/zclean.awk

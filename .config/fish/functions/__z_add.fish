@@ -1,1 +1,0 @@
-/Users/Carver/.config/fisherman/z/functions/__z_add.fish
