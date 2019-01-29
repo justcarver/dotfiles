@@ -40,3 +40,4 @@ Thumbs.db
 ######################
 .gitconfig
 .config/fish/fishd*
+.netrwhist
