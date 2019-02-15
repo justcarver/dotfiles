@@ -36,6 +36,9 @@ Plug 'posva/vim-vue'
 Plug 'elixir-editors/vim-elixir'
 Plug 'mhinz/vim-mix-format'
 
+" Go
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
 " restore_view - Automate views to help with code folding, etc.
 Plug 'vim-scripts/restore_view.vim'
 
