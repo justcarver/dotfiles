@@ -109,6 +109,13 @@ noremap <leader>n :Explore<Cr>
 " <leader>+b will open Netrw at the project directory
 noremap <leader>b :Explore.<Cr>
 
+"Split settings
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+
 " Plugin Specific Settings
 " Options to help with restore_view
 set viewoptions=cursor,folds,slash,unix
@@ -120,9 +127,14 @@ let g:airline_powerline_fonts=1
 let g:airline_theme='iceberg'
 
 " ALE
+let g:ale_linters = {'python': ['flake8'] }
 let g:ale_fixers = {
- \ 'javascript': ['eslint']
+ \ 'javascript': ['eslint'],
+ \ 'python': ['black']
  \ }
+
+let g:ale_python_flake8_options = '--ignore=E501,E203,W503'
+
 let g:ale_sign_error = '❌'
 let g:ale_sign_warning = '⚠️'
 let g:ale_fix_on_save = 1
