@@ -14,6 +14,10 @@ Plug 'jiangmiao/auto-pairs'
 " NERD Commenter
 Plug 'scrooloose/nerdcommenter'
 
+" NERD Tree
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+
 " obsession.vim - Using sessions to help restore vim state
 Plug 'tpope/vim-obsession'
 
@@ -31,6 +35,9 @@ Plug 'pangloss/vim-javascript'
 
 " Vue JS
 Plug 'posva/vim-vue'
+
+" ReactJS
+Plug 'mxw/vim-jsx'
 
 " Elixir
 Plug 'elixir-editors/vim-elixir'
@@ -105,7 +112,7 @@ map <SPACE> <leader>
 
 "Maps to open Netrw
 " <leader>+n will open Netrw at the current directory
-noremap <leader>n :Explore<Cr>
+noremap <leader>n :NERDTreeToggle<Cr>
 " <leader>+b will open Netrw at the project directory
 noremap <leader>b :Explore.<Cr>
 
@@ -127,7 +134,11 @@ let g:airline_powerline_fonts=1
 let g:airline_theme='iceberg'
 
 " ALE
-let g:ale_linters = {'python': ['flake8'] }
+let g:ale_linters = {
+ \ 'javascript': ['eslint'],
+ \ 'python': ['flake8']
+ \ }
+
 let g:ale_fixers = {
  \ 'javascript': ['eslint'],
  \ 'python': ['black']
