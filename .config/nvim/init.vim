@@ -114,7 +114,7 @@ map <SPACE> <leader>
 " <leader>+n will open Netrw at the current directory
 noremap <leader>n :NERDTreeToggle<Cr>
 " <leader>+b will open Netrw at the project directory
-noremap <leader>b :Explore.<Cr>
+" noremap <leader>b :Explore.<Cr>
 
 "Split settings
 nnoremap <C-J> <C-W><C-J>
@@ -159,3 +159,11 @@ let g:ale_fix_on_save = 1
 " Auto-Pairs settings
 " Disable the " chracter in .vim files.
 au Filetype vim let b:AutoPairs = {'(':')', '[':']', '{':'}',"'":"'", '`':'`'}
+
+" NERDTree
+" Show hidden files by default
+let g:NERDTreeShowHidden = 1 
+" Quen NERDTree when opening a file
+let g:NERDTreeQuitOnOpen = 1
+" Closes vim if NERDTree is the only area open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
