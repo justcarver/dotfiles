@@ -1,2 +1,4 @@
 .gitconfig
 .netrwhist
+
+.config/fish/fish_variables
