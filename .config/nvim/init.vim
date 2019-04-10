@@ -162,7 +162,7 @@ au Filetype vim let b:AutoPairs = {'(':')', '[':']', '{':'}',"'":"'", '`':'`'}
 
 " NERDTree
 " Show hidden files by default
-let g:NERDTreeShowHidden = 1 
+let g:NERDTreeShowHidden = 1
 " Quen NERDTree when opening a file
 let g:NERDTreeQuitOnOpen = 1
 " Closes vim if NERDTree is the only area open
