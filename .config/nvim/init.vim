@@ -144,7 +144,7 @@ let g:ale_fixers = {
  \ 'python': ['black']
  \ }
 
-let g:ale_python_flake8_options = '--ignore=E501,E203,W503'
+let g:ale_python_flake8_options = '--ignore=E116,E501,E203,W503'
 
 let g:ale_sign_error = '❌'
 let g:ale_sign_warning = '⚠️'
