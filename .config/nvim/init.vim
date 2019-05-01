@@ -49,6 +49,9 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " restore_view - Automate views to help with code folding, etc.
 Plug 'vim-scripts/restore_view.vim'
 
+" Markdown Preview
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+
 " Deoplete
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -167,3 +170,7 @@ let g:NERDTreeShowHidden = 1
 let g:NERDTreeQuitOnOpen = 1
 " Closes vim if NERDTree is the only area open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" Markdown Preview
+" Start automativcally when entering a markdown buffer
+let g:mkdp_auto_start = 1
