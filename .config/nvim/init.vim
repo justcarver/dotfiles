@@ -39,6 +39,9 @@ Plug 'posva/vim-vue'
 " ReactJS
 Plug 'mxw/vim-jsx'
 
+" Fish Scripts
+Plug 'dag/vim-fish'
+
 " Elixir
 Plug 'elixir-editors/vim-elixir'
 Plug 'mhinz/vim-mix-format'
