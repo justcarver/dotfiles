@@ -172,5 +172,5 @@ let g:NERDTreeQuitOnOpen = 1
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Markdown Preview
-" Start automativcally when entering a markdown buffer
+" Start automatically when entering a markdown buffer
 let g:mkdp_auto_start = 1
