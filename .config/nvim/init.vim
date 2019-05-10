@@ -27,6 +27,9 @@ Plug 'tpope/vim-fugitive'
 " vim-surround
 Plug 'tpope/vim-surround'
 
+" repeat.vim
+Plug 'tpope/vim-repeat'
+
 " ALE
 Plug 'w0rp/ale'
 
