@@ -16,7 +16,7 @@ Plug 'scrooloose/nerdcommenter'
 
 " NERD Tree
 Plug 'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
+"Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " obsession.vim - Using sessions to help restore vim state
 Plug 'tpope/vim-obsession'
