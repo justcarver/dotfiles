@@ -2,6 +2,7 @@ source ~/.zplug/init.zsh
 
 zplug "changyuheng/fz", defer:1
 zplug "rupa/z", use:z.sh
+zplug "changyuheng/zsh-interactive-cd"
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check; then
